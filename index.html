@@ -1,1 +1,86 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eimer's Homepage</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+            .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .profile img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 200px;
+        margin-top: 1rem;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        margin-top: 3rem;
+        width: 100%;
+        max-width: 600px;
+        color: black;
+        box-sizing: border-box;
+    }
+
+    .card img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .profile img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="profile">
+        <img src="your-profile-picture-url" alt="Eimer's Profile Picture">
+        <h1>Eimer</h1>
+        <p>Hello world. I'm Eimer. 请多多关照!</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/yourusername" target="_blank"><img src="instagram-icon-url" alt="Instagram"></a>
+            <a href="https://github.com/yourusername" target="_blank"><img src="github-icon-url" alt="GitHub"></a>
+            <a href="mailto:youremail@example.com" target="_blank"><img src="email-icon-url" alt="Email"></a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="your-large-picture-url" alt="Large Picture">
+        <h2>Your Title Here</h2>
+        <p>
+            Your paragraph of text goes here. You can replace this text with your own content, such as an introduction, your latest project, or anything else you'd like to showcase on your personal homepage.
+        </p>
+    </div>
+</body>
+</html>
