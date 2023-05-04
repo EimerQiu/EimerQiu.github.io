@@ -53,6 +53,23 @@
   height: auto;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 </style>
 </head>
 <body>
@@ -73,8 +90,10 @@
     <p>“生活的艺术与其说是消除我们的烦恼，不如说是与它们一起成长。” 伯纳德·M·巴鲁克</p>
   </div>
  <div class="card">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/G7L4YzGAvMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <h2>Dolphin</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/G7L4YzGAvMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+      <h2>Dolphin</h2>
     <p>Dolphins are among some of the most intelligent creatures on our planet, capable of ingenious hunting methods and playing games. </p>
   </div>
 <div class="card">
