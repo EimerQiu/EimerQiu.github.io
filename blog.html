@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eimer's Homepage</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.profile-container img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.social-icons img {
+  width: 25px;
+  height: 25px;
+  border-radius: 0;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  margin: 30px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="profile-container">
+    <img src="img/eee.png" alt="Eimer Qiu">
+    <h1>Eimer Qiu</h1>
+    <p>Hello world! I'm Eimer, a student from Shenzhen, China. 请多多关照!</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/eimerqiuofficial" target="_blank"><img src="img/ins_icon3.png" alt="Instagram"></a>
+      <a href="https://github.com/EimerQiu" target="_blank"><img src="img/github_icon3.png" alt="Github"></a>
+      <a href="mailto:eimerqiu@gmail.com"><img src="img/email_icon2.png" alt="Email"></a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/Judy2.JPG" alt="My cat Judy">
+    <h2>My cat Judy</h2>
+    <p>"The art of living lies less in eliminating our troubles than growing with them." Bernard M. Baruch </p>
+    <p>“生活的艺术与其说是消除我们的烦恼，不如说是与它们一起成长。” 伯纳德·M·巴鲁克</p>
+  </div>
+ <div class="card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/G7L4YzGAvMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+      <h2>Dolphin</h2>
+    <p>Dolphins are among some of the most intelligent creatures on our planet, capable of ingenious hunting methods and playing games. </p>
+  </div>
+<div class="card">
+  <!-- Replace the following line with the <video> element -->
+  <video width="100%" controls>
+    <source src="./video/autogpt_beginning.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h2>AutoGPT</h2>
+  <p>AutoGPT first experiment</p>
+</div>
+</body>
+</html>
+
+
